@@ -7,6 +7,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
+/* Libre Baskerville */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 /* Home */
 .navi.is-hovered,
 .navi:hover,
@@ -201,23 +205,98 @@ button {
 
 /* Contact Us */
 
+.email2.is-hovered,
+.email2:hover,
+.email2 > .hovered > .link:hover {
+  color: #8da8d3
+}
+
 .contact1 {
   padding-left:500px;
+  font-family: 'Libre Baskerville', serif; 
 }
 
 #phone {
   display: flex;
+  font-size: 20px;
   flex-direction: column;
-  padding-left: 615px;
+  padding-left: 590px;
+  font-family: 'Libre Baskerville', serif; 
 }
 
 #email {
-  padding-left: 640px;
+  padding-left: 620px;
+  font-family: 'Libre Baskerville', serif; 
+}
 
-  
+.email2 {
+  text-decoration: none;
+  color:black;
 }
 
 #confused {
   padding-top:5px;
   padding-left: 500px;
+}
+
+/* About Us */
+
+#about {
+  display: flex;
+  padding-left:580px;
+  font-family: 'Lobster Two', cursive;
+  font-size:40;
+  color: #8da8d3;
+  
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-left:80px;
+  padding-right:80px;
+  background-color: white;
+  font-family: 'Libre Baskerville', serif; 
+}
+
+#chef-image {
+  padding-left:400;
+}
+
+.location {
+  display:flex;
+  flex-direction: column;
+}
+
+#loc1 {
+  padding-left:630px;
+  font-size: 30px;
+  font-family: 'Lobster Two', cursive;
+  font-size:40;
+  color: #8da8d3;
+}
+
+#loc2 {
+  padding-left:330;
+  font-size: 25;
+  font-family: 'Libre Baskerville', serif; 
+}
+
+#map {
+  padding-left:400px;
+}
+
+/* Café Menu */
+
+#mainMenu {
+  padding-left:15px;
+  padding-top:50px;
+}
+
+#mainmenu3 {
+  padding-top:40px;
+  padding-left:550px;
+  font-family:'Lobster Two', cursive;
+  color:#8da8d3;
+  font-size: 45;
 }

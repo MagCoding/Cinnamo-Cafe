@@ -1,4 +1,3 @@
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,8 +8,27 @@
   </head>
 
   <body>
-    "This week's specials" 
-  </body>
+    <!-- Clickable Home Logo -->
+    <header>
+      <a href="index.html" class="logo"
+        ><img id="home"
+          src="https://cdn.discordapp.com/attachments/894007794217386004/1023640535174488195/cinnamoroll_2.jpg"
+          alt="Cinnamaroll Homepage"
+          width="115"
+      /></a>
+​
+      <!-- ! Move nav element inside header and change .css file -->
+      <!-- Nav bar -->
+      <nav>
+        <a class="navi" id="About Us" href="">About Us</a>
+        <a class="navi" id="menu" href="">Café Menu</a>
+        <a class="navi" id="Events" href="Events index.html">Events</a>
+        <a class="navi" id="Shop" href="">Shop</a>
+        <a class="navi" id="Contact" href="Cinnamoroll-Contact.html">Contact Us</a>
+      </nav>
+    </header>   
+
+ <h1> This Week's Specials </h1>
   
   <table>
   <tr>
@@ -20,47 +38,48 @@
   </tr>
   <tr>
     <td><img id="ctoast"
-            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Flookaside.instagram.com%2Fseo%2Fgoogle_widget%2Fcrawler%2F%3Fmedia_id%3D2598257096266205471&imgrefurl=https%3A%2F%2Fwww.instagram.com%2Fp%2FCQO3RAaFckf%2F%3Futm_medium%3Dshare_sheet&tbnid=7uxXoyg2zP5chM&vet=12ahUKEwj69pGc67f6AhUa7xoKHQ4aDRwQMygDegUIARDZAQ..i&docid=X3_LYeAf84OGgM&w=1440&h=1800&q=cinnamoroll%20food&client=safari&ved=2ahUKEwj69pGc67f6AhUa7xoKHQ4aDRwQMygDegUIARDZAQ"
+            src="data:image/jpeg;base64,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"
             alt="Cloud Toast"
-            width="50"
-            height="50"> </td>
+            width="100"
+            height="100"> </td>
     <td>Cloud Toast</td> 
     <td>£8</td>
   </tr>
   <tr>
     <td><img id = "dessert"
-             src = "https://www.google.com/imgres?imgurl=https%3A%2F%2F64.media.tumblr.com%2F1b4ef71b6722ff92a92b908b7dd1c166%2Faf0bf97538323183-b9%2Fs1280x1920%2F54e90c6b9e78b198ead1dbb1eeb048792412628c.png&imgrefurl=https%3A%2F%2Fmeltyparfait.tumblr.com%2Fpost%2F624183238263488512%2Fcinnamoroll-cafe&tbnid=mpOwyu0yY0ilIM&vet=12ahUKEwj69pGc67f6AhUa7xoKHQ4aDRwQMygTegUIARD_AQ..i&docid=RioSIRPYkGbWtM&w=800&h=1000&q=cinnamoroll%20food&client=safari&ved=2ahUKEwj69pGc67f6AhUa7xoKHQ4aDRwQMygTegUIARD_AQ"
+             src = "https://64.media.tumblr.com/1b4ef71b6722ff92a92b908b7dd1c166/af0bf97538323183-b9/s1280x1920/54e90c6b9e78b198ead1dbb1eeb048792412628c.png"
              alt = "Cinnamoroll Strawberry Sundae"
-             width = "50"
-             height="50"> 
+             width = "100"
+             height="100"> 
     </td>
     <td>Cinnamoroll Strawberry Sundae</td> 
     <td>£7.50</td>
   </tr>
     <tr>
     <td><img id="salad"
-            src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F0416%2F8083%2F0620%2Farticles%2FCinnamoroll_Rice_Bento-2_1d43bdd4-11e3-46b3-8286-299b1938332f_1172x.jpg%3Fv%3D1617065065&imgrefurl=https%3A%2F%2Fwww.sanrio.com%2Fblogs%2Fsanrio%2Fpack-your-lunch-with-cinnamoroll&tbnid=Rs6tSZws6LaeHM&vet=12ahUKEwj69pGc67f6AhUa7xoKHQ4aDRwQMygBegUIARDVAQ..i&docid=4xAEohGkBPjz7M&w=1172&h=781&q=cinnamoroll%20food&client=safari&ved=2ahUKEwj69pGc67f6AhUa7xoKHQ4aDRwQMygBegUIARDVAQ"
+            src="https://cdn.shopify.com/s/files/1/0416/8083/0620/articles/Cinnamoroll_Rice_Bento-2_1d43bdd4-11e3-46b3-8286-299b1938332f_1172x.jpg?v=1617065065"
             alt="Shrimp Salad with Cinnamoroll Bread"
-            width="50"
-            height="50"> </td>
+            width="100"
+            height="100"> </td>
     <td>Shrimp Salad with Cinnamoroll Bread</td> 
     <td>£11.50</td>
   </tr>
     <tr>
     <td><img id="eggsalad"
-            src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tripadvisor.co.uk%2FRestaurant_Review-g298564-d15097615-Reviews-Cinnamoroll_Cafe_Kyoto-Kyoto_Kyoto_Prefecture_Kinki.html&psig=AOvVaw0RlZChLzQj7PIbLrpOxOpP&ust=1664466548415000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCPjkuJrwt_oCFQAAAAAdAAAAABAD"
+            src="https://media-cdn.tripadvisor.com/media/photo-s/15/0c/94/89/caption.jpg"
             alt="Shrimp Salad with Cinnamoroll Bread"
-            width="50"
-            height="50"> </td>
+            width="100"
+            height="100"> </td>
     <td> Cinnamoroll Scrambled egg salad</td> 
     <td>£10.50</td>
 </table>
-  
-  <body> 
+
+<h1> Our Regular Menu </h1>
+<body> 
     <img id= mainMenu
          src = "https://2.bp.blogspot.com/-X84DO6yksZg/WSb_Jws5PnI/AAAAAAAALqI/CaNo-aonNf8De0WnPJc6ErluJoUiXS8vwCLcB/s1600/IMG_1543.JPG"
          alt = "Regular Menu" 
-         width = "120" 
-         height = "140">
+         width = "1250" 
+         height = "1250">
   </body>
 </html>

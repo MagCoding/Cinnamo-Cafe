@@ -1,0 +1,223 @@
+/* Lobster */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+
+/* Noto Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* Home */
+.navi.is-hovered,
+.navi:hover,
+.navi > .hovered > .link:hover {
+    color: #8da8d3
+}
+
+html,
+body {
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  
+  /* ! do not need to set this, unless it is useful later */
+  /* position: relative; */
+
+  /* ! stack elements on top of each other */
+  flex-direction: column;
+}
+
+
+header {
+  /* ! align elements horizontally */
+  display: flex;
+
+  /* ! no need for this since it's the default setting when using display: flex */
+  /* flex-direction: row;  */
+
+  /* ! vertically position elements to the center */
+  align-items: center;
+
+  /* ! space out the image and nav element apart */
+  justify-content: space-between;
+
+  /* ! create spacing inside header element */
+  padding: 0 30px;
+  cursor:pointer;
+}
+
+.navi {
+  all:unset;
+  padding-right:50px;
+}
+
+.hero {
+  /* ! set position so the .title element can be placed properly inside */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-image {
+  padding-left:150px;
+  padding-top:10px;
+}
+.overlay {
+  /* ! places the box wrapping texts on top of image */
+  position: absolute;
+
+  display: flex;
+
+  /* ! need to set this as the default is flex-direction: row */
+  flex-direction: column;
+
+  /* ! position the box wrapping texts to the middle of the image */
+  align-items: center;
+  align-self: center;
+
+}
+.title {
+  font-family: 'Lobster Two', cursive;
+  font-size: 70px;
+  margin: 0;
+
+}
+
+/* ! set the p element that is inside the div with className="overlay" */
+.overlay > p {
+  font-family:'Noto Sans', sans-serif;
+  font-size: 45px;
+  margin: 0;
+  padding-right:10px;
+}
+
+.second {
+  display:flex;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 25px;
+  color: #8da8d3;
+  padding-left:520px;
+  padding-top:20px;
+  /* width:40%; */
+  
+  
+}
+
+.third {
+  display:flex;
+  flex-direction: column;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  padding-left:680px;
+}
+
+/* Events */
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.2em;
+}
+
+#outside {
+  background-color: #FFE4E1;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+form {
+  margin: 0 auto;
+  width: 70%;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  
+}
+#survey-form {
+  background-color: white;
+}
+
+fieldset { 
+  border:1px solid lightgray;
+  margin: 10px;
+ }
+
+legend {
+  font-weight: 700;
+}
+
+#number {
+  width: 150px;
+}
+
+
+div + div {
+  margin-top: 1em;
+  }
+
+input, textarea {
+  width: 200px;
+  border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+  border-color: lightblue;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+.button {
+  padding-left: 90px; 
+}
+
+button {
+  margin: .5em;
+  font-size: 1em;
+  text-transform: capitalize;
+  background-color: #E0FFFF;
+  color: black;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  
+}
+
+#submitbutton {
+  display: flex; 
+  justify-content: center;
+}
+
+/* Contact Us */
+
+.contact1 {
+  padding-left:500px;
+}
+
+#phone {
+  display: flex;
+  flex-direction: column;
+  padding-left: 615px;
+}
+
+#email {
+  padding-left: 640px;
+
+  
+}
+
+#confused {
+  padding-top:5px;
+  padding-left: 500px;
+}

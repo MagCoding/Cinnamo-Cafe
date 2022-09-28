@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinnamoroll | Events</title>
+    <link rel="stylesheet" href="Cinnamoroll-Style.css">
+</head>
+<body>
+
+  <body>
+    <body>
+      <!-- Clickable Home Logo -->
+      <header>
+        <a href="Cinnamoroll-Home.html" class="logo"
+          ><img id="home"
+            src="https://cdn.discordapp.com/attachments/894007794217386004/1023640535174488195/cinnamoroll_2.jpg"
+            alt="Cinnamaroll Homepage"
+            width="115"
+        /></a>
+  
+        <!-- ! Move nav element inside header and change .css file -->
+        <!-- Nav bar -->
+        <nav>
+          <a class="navi" id="About Us" href="">About Us</a>
+          <a class="navi" id="menu" href="">Café Menu</a>
+          <a class="navi" id="Events" href="Events index.html">Events</a>
+          <a class="navi" id="Shop" href="">Shop</a>
+          <a class="navi" id="Contact" href="Cinnamoroll-Contact.html">Contact Us</a>
+        </nav>
+      </header>
+  
+  
+ 
+    <!---------Form-------------->
+    <div id="outside">
+        <form id="survey-form" action="/my-handling-form-page" method="post">
+          <h1 id="title">Book our cafe for your own events</h1>
+          <p id="description"> Cinammaroll Cafe can host all kinds of events for you or your organisation. Please fill in the details below and we will get back to you.</p>
+          
+          <!-- ------------------Personal Details---------------------------- -->
+          <fieldset>
+            <legend>Personal Details</legend>
+            <div>
+              <label id="name-label" for="name">Name:</label>
+              <input type="text" required id="name" name="user_name" placeholder="First and last name">   </div>
+            <div>
+              <label id="email-label" for="Email">Email:</label>
+              <input type="email" required id="email" name="user_email" placeholder="Email address">   </div>
+            <div>
+              <label id="number-label" for="phone">Phone Number:</label>
+              <input type="text" id="number" name="user_name" placeholder="Phone number">  </div>
+            <div>
+            <label for="date-label">Date of booking:</label>
+            <input type="date" name="bday"> </div>
+          
+          </fieldset>
+  
+          <!-- -----------------Event type dropdown menu--------------------------------- -->
+          
+          <fieldset>
+            <div>
+              <label for="eventtype">Please select event type</label>
+              <select id="dropdown">
+          <option value="birthday">Birthday</option>
+          <option value="work">Work</option>
+          <option value="other">Other</option>
+          </select>
+        
+          <!-- --------------------Text Area------------------------------ -->
+          
+          <fieldset>
+            <legend>Comments</legend>
+            <div>
+              <label for="msg"></label>
+              <p> Please use this space to provide any further information you may have</p>
+              <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+          </fieldset>
+        
+          <div id="submitbutton">
+            <button type="submit" id="submit">Send your booking request</button>   </div>
+        
+        </form>
+          </div>
+</body>
+</html>
